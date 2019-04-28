@@ -1,4 +1,3 @@
-{!! csrf_field() !!}
 <div class="form-group">
     <input type="text" value="{{ $category->title ?? old('title') }}" name="title" class="form-control" placeholder="Título">
 </div>
