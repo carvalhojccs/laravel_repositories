@@ -29,7 +29,7 @@ class StoreUpdateCategoryFormRequest extends FormRequest
             //define que o campo é único na tabela categories e adiciona uma exceção caso este não seja editado
             //unique:<tabela>,<coluna>,{<id_do_item},<id_do_item_na_tabela>,
             'title'         => "required|min:3|max:60|unique:categories,title,{$id},id",
-            'url'           => "required|min:3|max:60|unique:categories,url,{$id},id",
+            //'url'           => "required|min:3|max:60|unique:categories,url,{$id},id",
             'description'   => 'max:2000',
             
         ];
